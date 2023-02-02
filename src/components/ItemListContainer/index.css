@@ -1,0 +1,10 @@
+.greeting-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+.greeting-text {
+    color: #f72585;
+    font-size: 1.5rem;
+}
