@@ -4,7 +4,9 @@ import './index.css'
 
 const ItemListContainer = () => {
   return (
-    <ItemList />
+    <div className='container mx-auto'>
+      <ItemList />
+    </div>
   )
 }
 

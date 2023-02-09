@@ -35,19 +35,4 @@
     border-radius: 8px;
     width: 100vw;
 }
-@media screen and (min-width: 640px) {
-    .items-card-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        margin: 0 !important;
-    }
-}
-@media screen and (min-width: 1024px) {
-    .items-card-wrapper {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-@media screen and (min-width: 1536px) {
-    .items-card-wrapper {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
+
