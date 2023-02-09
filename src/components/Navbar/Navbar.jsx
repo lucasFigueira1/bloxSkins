@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import "./index.css";
-import logo from "./assets/bloxskins-logo.png";
-import { Squash as Hamburger } from "hamburger-react";
-import { CartWidget } from "../Cart/CartWidget";
+import React, { useState } from 'react'
+import './index.css'
+import logo from './assets/bloxskins-logo.png'
+import { Squash as Hamburger } from 'hamburger-react'
+import { CartWidget } from '../Cart/CartWidget'
 
 const Navbar = () => {
-  let [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(false)
 
-  let Links = [
-    { name: "PISTOLS", link: "/" },
-    { name: "RIFLES", link: "/" },
-    { name: "SMGs", link: "/" },
-    { name: "HEAVY", link: "/" },
-    { name: "KNIVES", link: "/" },
-  ];
+  const Links = [
+    { name: 'USP-S', link: '/' },
+    { name: 'AK-47', link: '/' },
+    { name: 'AWP', link: '/' },
+    { name: 'Desert Eagle', link: '/' },
+    { name: 'M4A1-S', link: '/' }
+  ]
 
   const toggleNav = () => {
     setShowNav(!showNav)
@@ -22,36 +22,35 @@ const Navbar = () => {
   return (
 
     <header>
-      <nav className="h-20 flex flex-row justify-between sm:mx-8 items-center">
+      <nav className='container mx-auto h-20 flex flex-row justify-between items-center'>
 
         <div>
-          <img className="w-40 h-auto cursor-pointer" src={logo} alt="bloxSkins logo" />
+          <img className='w-40 h-auto cursor-pointer' src={logo} alt='bloxSkins logo' />
         </div>
 
         <ul className={`navigation-ul ${showNav ? 'visible' : 'hidden'}`}>
           {
-            Links.map((link)=> (
+            Links.map((link) => (
               <li key={link.name}>
-                <a href={link.link}>{link.name}</a>
+                <a className='font-semibold' href={link.link}>{link.name}</a>
               </li>
             ))
           }
         </ul>
 
-        <div className="flex flex-row items-center gap-2">
-          
-            <CartWidget/>
+        <div className='flex flex-row items-center gap-2'>
 
-            <span onClick={toggleNav}>
-              <Hamburger color="#FFF" size={26} />
-            </span>
-          </div>
+          <CartWidget />
+
+          <span onClick={toggleNav}>
+            <Hamburger color='#FFF' size={26} />
+          </span>
+        </div>
 
       </nav>
     </header>
 
   )
-
 }
 
-export default Navbar; 
+export default Navbar
