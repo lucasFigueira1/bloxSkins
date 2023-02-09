@@ -13,7 +13,6 @@ function App () {
   return (
     <BrowserRouter>
       <Navbar />
-      <ItemListContainer />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/category/:id' element={<ItemListContainer />} />
