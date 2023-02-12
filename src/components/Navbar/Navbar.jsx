@@ -3,17 +3,10 @@ import './index.css'
 import logo from './assets/bloxskins-logo.png'
 import { Squash as Hamburger } from 'hamburger-react'
 import { CartWidget } from '../Cart/CartWidget'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false)
-
-  const Links = [
-    { name: 'USP-S', link: '/' },
-    { name: 'AK-47', link: '/' },
-    { name: 'AWP', link: '/' },
-    { name: 'Desert Eagle', link: '/' },
-    { name: 'M4A1-S', link: '/' }
-  ]
 
   const toggleNav = () => {
     setShowNav(!showNav)
@@ -22,20 +15,30 @@ const Navbar = () => {
   return (
 
     <header>
-      <nav className='container mx-auto h-20 flex flex-row justify-between items-center'>
+      <nav className='container mx-auto h-20 flex flex-row justify-between items-center mb-8'>
 
         <div>
-          <img className='w-40 h-auto cursor-pointer' src={logo} alt='bloxSkins logo' />
+          <Link to='/'>
+            <img className='w-40 h-auto cursor-pointer' src={logo} alt='bloxSkins logo' />
+          </Link>
         </div>
 
         <ul className={`navigation-ul ${showNav ? 'visible' : 'hidden'}`}>
-          {
-            Links.map((link) => (
-              <li key={link.name}>
-                <a className='font-semibold' href={link.link}>{link.name}</a>
-              </li>
-            ))
-          }
+          <li>
+            <Link to='/category/USP-S'>USP-S</Link>
+          </li>
+          <li>
+            <Link to='/category/AK-47'>AK-47</Link>
+          </li>
+          <li>
+            <Link to='/category/AWP'>AWP</Link>
+          </li>
+          <li>
+            <Link to='/category/DESERT EAGLE'>Desert Eagle</Link>
+          </li>
+          <li>
+            <Link to='/category/M4A1-S'>M4A1-S</Link>
+          </li>
         </ul>
 
         <div className='flex flex-row items-center gap-2'>

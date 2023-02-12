@@ -6,8 +6,6 @@ import './index.css'
 function ItemList () {
   const [weapons, setWeapons] = useState([])
 
-  console.log(weapons)
-
   useEffect(() => {
     setWeapons(data)
   }, [])
