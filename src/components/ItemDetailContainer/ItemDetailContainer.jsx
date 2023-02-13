@@ -22,8 +22,8 @@ function ItemDetailContainer () {
   }
 
   return (
-    <div className='item-detail-container'>
-      <div className='item'>
+    <div className='item-detail-container h-full'>
+      <div className='mx-4 md:mx-0'>
         <ItemDetail weapon={weapon} />
       </div>
     </div>

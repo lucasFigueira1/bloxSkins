@@ -1,0 +1,23 @@
+.item-count-btn {
+    display: block;
+    background-color: #f72585;
+    border-radius: 8px;
+    text-align: center;
+    padding: 6px 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.item-count-btn:hover {
+    background-color: #f72584d0;
+}
+.quantity-wrapper {
+    font-weight: 600;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+.quantity-btn {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 500 !important;
+}

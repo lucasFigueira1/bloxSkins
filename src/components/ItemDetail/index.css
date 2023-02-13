@@ -1,0 +1,25 @@
+.item-details-wrapper {
+    background-color: #242423;
+    border: 2px solid #f72585;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media screen and (max-width: 1024px) {
+    .item-img {
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .item-details-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 1rem 2.5rem !important;
+        height: 70vh;
+    }
+}
+@media screen and (min-width: 1536px) {
+    .item-details-wrapper {
+        padding: 1rem 6.5rem !important;
+    }
+}

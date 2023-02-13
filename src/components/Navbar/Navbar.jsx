@@ -13,7 +13,6 @@ const Navbar = () => {
   }
 
   return (
-
     <header>
       <nav className='container mx-auto h-20 flex flex-row justify-between items-center mb-8'>
 
@@ -52,7 +51,6 @@ const Navbar = () => {
 
       </nav>
     </header>
-
   )
 }
 
