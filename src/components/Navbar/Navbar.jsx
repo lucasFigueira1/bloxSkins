@@ -33,7 +33,7 @@ const Navbar = () => {
             <Link to='/category/AWP'>AWP</Link>
           </li>
           <li>
-            <Link to='/category/DESERT EAGLE'>Desert Eagle</Link>
+            <Link to='/category/Desert Eagle'>Desert Eagle</Link>
           </li>
           <li>
             <Link to='/category/M4A1-S'>M4A1-S</Link>
