@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './index.css'
 import logo from './assets/bloxskins-logo.png'
 import { Squash as Hamburger } from 'hamburger-react'
-import { CartWidget } from '../Cart/CartWidget'
+import { CartWidget } from '../CartWidget/CartWidget'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
