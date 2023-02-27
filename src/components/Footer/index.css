@@ -1,0 +1,18 @@
+.footer-container {
+    display: flex;
+    margin-top: 9rem;
+    box-shadow: 0px 0px 11px 0px #00000069;
+}
+.footer-data {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding: 6rem 2rem;
+    color: #fff;
+}
+@media screen and (min-width: 1024px) {
+    .footer-data h2 {
+        font-size: 1.5rem;
+    }
+}
