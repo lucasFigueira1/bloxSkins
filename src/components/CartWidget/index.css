@@ -1,0 +1,17 @@
+.bag-container {
+display: flex;
+}
+.qty-bubble {
+    display: flex;
+    background-color: #f72585;
+    justify-content: center;
+    align-self: center;
+    width: 16px;
+    height: 16px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 50px;
+    position: absolute;
+    margin-left: 16px;
+    margin-bottom: 14px;
+}

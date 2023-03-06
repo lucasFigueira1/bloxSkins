@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import './index.css'
 import { Link } from 'react-router-dom'
+import { useCart } from '../../hooks/useCart'
 
-function ItemCount () {
+function ItemCount ({ weapon }) {
   const [quantity, setQuantity] = useState(1)
+  const { addToCart } = useCart()
 
   const handleQuantity = (act) => {
     if (act === 'sum' && quantity >= 1) {
@@ -11,6 +13,11 @@ function ItemCount () {
     } else if (act === 'res' && quantity > 1) {
       setQuantity(quantity - 1)
     }
+  }
+
+  const itemQuantityCart = () => {
+    weapon.quantity = quantity
+    addToCart(weapon)
   }
 
   return (
@@ -21,7 +28,7 @@ function ItemCount () {
         <span className='quantity-btn' onClick={() => handleQuantity('sum')}>+</span>
       </div>
       <div className='item-count-container flex flex-col gap-2'>
-        <span className='item-count-btn'>
+        <span className='item-count-btn' onClick={itemQuantityCart}>
           Add to cart
         </span>
         <Link to='../'>

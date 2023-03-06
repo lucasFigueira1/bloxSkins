@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import data from '../../mock/FaceApi.json'
+import { skins as data } from '../../mock/FaceApi.json'
 import Item from '../Item/Item'
 import './index.css'
 

@@ -1,42 +1,284 @@
-[
-  { "category": "AK-47", "skin_name": "Ice Coaled", "id": 1, "price": 37.26, "skin_img": "/skins/ak-47/icecoaled.webp" },
-  { "category": "AK-47", "skin_name": "Asiimov", "id": 2, "price": 144, "skin_img": "/skins/ak-47/asimov.png" },
-  { "category": "AK-47", "skin_name": "Nightwish", "id": 3, "price": 88.55, "skin_img": "/skins/ak-47/nightwish.png" },
-  { "category": "AK-47", "skin_name": "The Empress", "id": 4, "price": 77.07, "skin_img": "/skins/ak-47/theempress.png" },
-  { "category": "AK-47", "skin_name": "Bloodsport", "id": 5, "price": 76.65, "skin_img": "/skins/ak-47/bloodsport.png" },
-  { "category": "AK-47", "skin_name": "Redline", "id": 6, "price": 58.53, "skin_img": "/skins/ak-47/redline.png" },
-  { "category": "AK-47", "skin_name": "Neon Rider", "id": 7, "price": 90.18, "skin_img": "/skins/ak-47/neonrider.png" },
-  { "category": "AK-47", "skin_name": "Vulcan", "id": 8, "price": 596.87, "skin_img": "/skins/ak-47/vulcan.png" },
-  { "category": "AK-47", "skin_name": "Case Hardened", "id": 9, "price": 239.95, "skin_img": "/skins/ak-47/casehardened.png" },
-  { "category": "AK-47", "skin_name": "Hydroponic", "id": 10, "price": 1484, "skin_img": "/skins/ak-47/hydroponic.png" },
-  { "category": "AWP", "skin_name": "Asiimov", "id": 11, "price": 101, "skin_img": "/skins/awp/asiimov.webp" },
-  { "category": "AWP", "skin_name": "Chromatic Aberration", "id": 51.06, "price": 12, "skin_img": "/skins/awp/chromatic.webp" },
-  { "category": "AWP", "skin_name": "Wildfire", "id": 13, "price": 90.89, "skin_img": "/skins/awp/wildfire.webp" },
-  { "category": "AWP", "skin_name": "Redline", "id": 14, "price": 48.64, "skin_img": "/skins/awp/redline.webp" },
-  { "category": "AWP", "skin_name": "Graphite", "id": 15, "price": 149, "skin_img": "/skins/awp/graphite.webp" },
-  { "category": "AWP", "skin_name": "Gugnir", "id": 16, "price": 8708, "skin_img": "/skins/awp/gugnir.webp" },
-  { "category": "AWP", "skin_name": "Dragon Lore", "id": 17, "price": 9623, "skin_img": "/skins/awp/dragonlore.webp" },
-  { "category": "AWP", "skin_name": "The Prince", "id": 18, "price": 3158, "skin_img": "/skins/awp/theprince.webp" },
-  { "category": "AWP", "skin_name": "Fade", "id": 19, "price": 711, "skin_img": "/skins/awp/fade.webp" },
-  { "category": "AWP", "skin_name": "Desert Hydra", "id": 20, "price": 1872, "skin_img": "/skins/awp/deserthydra.webp" },
-  { "category": "Desert Eagle","skin_name": "Prinstream", "id": 21, "price": 97.01, "skin_img": "/skins/dk/printstream.webp" },
-  { "category": "Desert Eagle","skin_name": "Ocean Drive", "id": 22, "price": 74.38, "skin_img": "/skins/dk/oceandrive.webp" },
-  { "category": "Desert Eagle","skin_name": "Blaze", "id": 23, "price": 442.50, "skin_img": "/skins/dk/blaze.webp" },
-  { "category": "Desert Eagle","skin_name": "Emerald Jörmungandr", "id": 24, "price": 217.13, "skin_img": "/skins/dk/emerald.webp" },
-  { "category": "Desert Eagle","skin_name": "Sunset Storm 壱", "id": 25, "price": 230.23, "skin_img": "/skins/dk/sunset.webp" },
-  { "category": "Desert Eagle","skin_name": "Fennec Fox", "id": 26, "price": 250.39, "skin_img": "/skins/dk/fennec.webp" },
-  { "category": "M4A1-S", "skin_name": "Hot Rod", "id": 27, "price": 442.55, "skin_img": "/skins/m4a1-s/hotrod.webp" },
-  { "category": "M4A1-S", "skin_name": "Mecha Industries", "id": 28, "price": 45.31, "skin_img": "/skins/m4a1-s/mechaindustries.webp" },
-  { "category": "M4A1-S", "skin_name": "Golden Coil", "id": 29, "price": 91.43, "skin_img": "/skins/m4a1-s/goldencoil.webp" },
-  { "category": "M4A1-S", "skin_name": "Blue Phosphor", "id": 30, "price": 206.30, "skin_img": "/skins/m4a1-s/bluephosphor.webp" },
-  { "category": "M4A1-S","skin_name": "Welcome to the Jungle", "id": 31, "price": 1874, "skin_img": "/skins/m4a1-s/wlcmttjungle.webp" },
-  { "category":"USP-S", "skin_name": "Prinstream", "id": 32, "price": 158.44, "skin_img": "/skins/usp/printstream.webp" },
-  { "category":"USP-S", "skin_name": "Cortex", "id": 33, "price": 7.58, "skin_img": "/skins/usp/cortex.webp" },
-  { "category":"USP-S", "skin_name": "The Traitor", "id": 34, "price": 43.02, "skin_img": "/skins/usp/thetraitor.webp" },
-  { "category":"USP-S", "skin_name": "Ticket to Hell", "id": 35, "price": 1.90, "skin_img": "/skins/usp/tickettohell.webp" },
-  { "category":"USP-S", "skin_name": "Kill Confirmed", "id": 36, "price": 120.49, "skin_img": "/skins/usp/killconfirmed.webp" },
-  { "category":"USP-S", "skin_name": "Neo-Noir", "id": 37, "price": 33.80, "skin_img": "/skins/usp/neonoir.webp" },
-  { "category":"USP-S", "skin_name": "Overgrowth", "id": 38, "price": 49.73, "skin_img": "/skins/usp/overgrowth.webp" },
-  { "category":"USP-S", "skin_name": "Cyrex", "id": 39, "price": 2.74, "skin_img": "/skins/usp/cyrex.webp" },
-  { "category":"USP-S", "skin_name": "Monster Mashup", "id": 40, "price": 23.39, "skin_img": "/skins/usp/monstermashup.webp" }
-]
+{
+  "skins": [
+    {
+      "category": "AK-47",
+      "skin_name": "Ice Coaled",
+      "id": 1,
+      "price": 37.26,
+      "skin_img": "/skins/ak-47/icecoaled.webp"
+    },
+    {
+      "category": "AK-47",
+      "skin_name": "Asiimov",
+      "id": 2,
+      "price": 144,
+      "skin_img": "/skins/ak-47/asimov.png"
+    },
+    {
+      "category": "AK-47",
+      "skin_name": "Nightwish",
+      "id": 3,
+      "price": 88.55,
+      "skin_img": "/skins/ak-47/nightwish.png"
+    },
+    {
+      "category": "AK-47",
+      "skin_name": "The Empress",
+      "id": 4,
+      "price": 77.07,
+      "skin_img": "/skins/ak-47/theempress.png"
+    },
+    {
+      "category": "AK-47",
+      "skin_name": "Bloodsport",
+      "id": 5,
+      "price": 76.65,
+      "skin_img": "/skins/ak-47/bloodsport.png"
+    },
+    {
+      "category": "AK-47",
+      "skin_name": "Redline",
+      "id": 6,
+      "price": 58.53,
+      "skin_img": "/skins/ak-47/redline.png"
+    },
+    {
+      "category": "AK-47",
+      "skin_name": "Neon Rider",
+      "id": 7,
+      "price": 90.18,
+      "skin_img": "/skins/ak-47/neonrider.png"
+    },
+    {
+      "category": "AK-47",
+      "skin_name": "Vulcan",
+      "id": 8,
+      "price": 596.87,
+      "skin_img": "/skins/ak-47/vulcan.png"
+    },
+    {
+      "category": "AK-47",
+      "skin_name": "Case Hardened",
+      "id": 9,
+      "price": 239.95,
+      "skin_img": "/skins/ak-47/casehardened.png"
+    },
+    {
+      "category": "AK-47",
+      "skin_name": "Hydroponic",
+      "id": 10,
+      "price": 1484,
+      "skin_img": "/skins/ak-47/hydroponic.png"
+    },
+    {
+      "category": "AWP",
+      "skin_name": "Asiimov",
+      "id": 11,
+      "price": 101,
+      "skin_img": "/skins/awp/asiimov.webp"
+    },
+    {
+      "category": "AWP",
+      "skin_name": "Chromatic Aberration",
+      "id": 12,
+      "price": 51.06,
+      "skin_img": "/skins/awp/chromatic.webp"
+    },
+    {
+      "category": "AWP",
+      "skin_name": "Wildfire",
+      "id": 13,
+      "price": 90.89,
+      "skin_img": "/skins/awp/wildfire.webp"
+    },
+    {
+      "category": "AWP",
+      "skin_name": "Redline",
+      "id": 14,
+      "price": 48.64,
+      "skin_img": "/skins/awp/redline.webp"
+    },
+    {
+      "category": "AWP",
+      "skin_name": "Graphite",
+      "id": 15,
+      "price": 149,
+      "skin_img": "/skins/awp/graphite.webp"
+    },
+    {
+      "category": "AWP",
+      "skin_name": "Gugnir",
+      "id": 16,
+      "price": 8708,
+      "skin_img": "/skins/awp/gugnir.webp"
+    },
+    {
+      "category": "AWP",
+      "skin_name": "Dragon Lore",
+      "id": 17,
+      "price": 9623,
+      "skin_img": "/skins/awp/dragonlore.webp"
+    },
+    {
+      "category": "AWP",
+      "skin_name": "The Prince",
+      "id": 18,
+      "price": 3158,
+      "skin_img": "/skins/awp/theprince.webp"
+    },
+    {
+      "category": "AWP",
+      "skin_name": "Fade",
+      "id": 19,
+      "price": 711,
+      "skin_img": "/skins/awp/fade.webp"
+    },
+    {
+      "category": "AWP",
+      "skin_name": "Desert Hydra",
+      "id": 20,
+      "price": 1872,
+      "skin_img": "/skins/awp/deserthydra.webp"
+    },
+    {
+      "category": "Desert Eagle",
+      "skin_name": "Prinstream",
+      "id": 21,
+      "price": 97.01,
+      "skin_img": "/skins/dk/printstream.webp"
+    },
+    {
+      "category": "Desert Eagle",
+      "skin_name": "Ocean Drive",
+      "id": 22,
+      "price": 74.38,
+      "skin_img": "/skins/dk/oceandrive.webp"
+    },
+    {
+      "category": "Desert Eagle",
+      "skin_name": "Blaze",
+      "id": 23,
+      "price": 442.50,
+      "skin_img": "/skins/dk/blaze.webp"
+    },
+    {
+      "category": "Desert Eagle",
+      "skin_name": "Emerald Jörmungandr",
+      "id": 24,
+      "price": 217.13,
+      "skin_img": "/skins/dk/emerald.webp"
+    },
+    {
+      "category": "Desert Eagle",
+      "skin_name": "Sunset Storm 壱",
+      "id": 25,
+      "price": 230.23,
+      "skin_img": "/skins/dk/sunset.webp"
+    },
+    {
+      "category": "Desert Eagle",
+      "skin_name": "Fennec Fox",
+      "id": 26,
+      "price": 250.39,
+      "skin_img": "/skins/dk/fennec.webp"
+    },
+    {
+      "category": "M4A1-S",
+      "skin_name": "Hot Rod",
+      "id": 27,
+      "price": 442.55,
+      "skin_img": "/skins/m4a1-s/hotrod.webp"
+    },
+    {
+      "category": "M4A1-S",
+      "skin_name": "Mecha Industries",
+      "id": 28,
+      "price": 45.31,
+      "skin_img": "/skins/m4a1-s/mechaindustries.webp"
+    },
+    {
+      "category": "M4A1-S",
+      "skin_name": "Golden Coil",
+      "id": 29,
+      "price": 91.43,
+      "skin_img": "/skins/m4a1-s/goldencoil.webp"
+    },
+    {
+      "category": "M4A1-S",
+      "skin_name": "Blue Phosphor",
+      "id": 30,
+      "price": 206.30,
+      "skin_img": "/skins/m4a1-s/bluephosphor.webp"
+    },
+    {
+      "category": "M4A1-S",
+      "skin_name": "Welcome to the Jungle",
+      "id": 31,
+      "price": 1874,
+      "skin_img": "/skins/m4a1-s/wlcmttjungle.webp"
+    },
+    {
+      "category": "USP-S",
+      "skin_name": "Prinstream",
+      "id": 32,
+      "price": 158.44,
+      "skin_img": "/skins/usp/printstream.webp"
+    },
+    {
+      "category": "USP-S",
+      "skin_name": "Cortex",
+      "id": 33,
+      "price": 7.58,
+      "skin_img": "/skins/usp/cortex.webp"
+    },
+    {
+      "category": "USP-S",
+      "skin_name": "The Traitor",
+      "id": 34,
+      "price": 43.02,
+      "skin_img": "/skins/usp/thetraitor.webp"
+    },
+    {
+      "category": "USP-S",
+      "skin_name": "Ticket to Hell",
+      "id": 35,
+      "price": 1.90,
+      "skin_img": "/skins/usp/tickettohell.webp"
+    },
+    {
+      "category": "USP-S",
+      "skin_name": "Kill Confirmed",
+      "id": 36,
+      "price": 120.49,
+      "skin_img": "/skins/usp/killconfirmed.webp"
+    },
+    {
+      "category": "USP-S",
+      "skin_name": "Neo-Noir",
+      "id": 37,
+      "price": 33.80,
+      "skin_img": "/skins/usp/neonoir.webp"
+    },
+    {
+      "category": "USP-S",
+      "skin_name": "Overgrowth",
+      "id": 38,
+      "price": 49.73,
+      "skin_img": "/skins/usp/overgrowth.webp"
+    },
+    {
+      "category": "USP-S",
+      "skin_name": "Cyrex",
+      "id": 39,
+      "price": 2.74,
+      "skin_img": "/skins/usp/cyrex.webp"
+    },
+    {
+      "category": "USP-S",
+      "skin_name": "Monster Mashup",
+      "id": 40,
+      "price": 23.39,
+      "skin_img": "/skins/usp/monstermashup.webp"
+    }
+  ]
+}

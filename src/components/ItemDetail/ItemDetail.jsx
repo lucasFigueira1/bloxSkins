@@ -15,7 +15,7 @@ function ItemDetail ({ weapon }) {
           <span className='font-semibold text-base'>${weapon.price}</span>
         </div>
         <div>
-          <ItemCount />
+          <ItemCount weapon={weapon} />
         </div>
       </div>
     </div>
