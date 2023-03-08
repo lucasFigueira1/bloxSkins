@@ -1,0 +1,23 @@
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #242423;
+    border: 1px solid #f72585;
+    border-radius: 4px;
+    color: #fff;
+}
+.info-checkout {
+    padding: 1rem 2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+}
+.checkout-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+}

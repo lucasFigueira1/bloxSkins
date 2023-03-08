@@ -1,0 +1,15 @@
+.cart-data-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-data-buttons .cart-data-btn {
+    width: 50%;
+    background-color: #f72585;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 24px 0;
+    cursor: pointer;
+}

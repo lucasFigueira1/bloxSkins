@@ -5,21 +5,3 @@
     flex-direction: column;
     gap: .35rem;
 }
-.total-items-wrapper, .total-price-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-.cart-data-buttons {
-    display: flex;
-    gap: 1rem;
-}
-.cart-data-buttons span {
-    width: 50%;
-    background-color: #f72585;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    padding: 14px 0;
-    cursor: pointer;
-}

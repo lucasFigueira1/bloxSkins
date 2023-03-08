@@ -1,0 +1,13 @@
+@media screen and (min-width: 1024px) {
+    .cart-item-data {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 420px) {
+    .skin-data-wrapper {
+        display: flex !important;
+    }
+    .item-qty {
+        margin-left: auto !important;
+    }
+}

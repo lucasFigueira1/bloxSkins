@@ -10,7 +10,9 @@
     border: 1px solid #f72585;
     border-radius: 4px;
 }
-
+.cart-list-wrapper {
+    margin: 5rem 0;
+}
 @media screen and (max-width: 768px) {
     .cart-list-wrapper {
         margin: 0 14px;

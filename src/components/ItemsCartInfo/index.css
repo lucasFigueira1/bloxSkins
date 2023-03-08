@@ -1,0 +1,4 @@
+.total-items-wrapper, .total-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
