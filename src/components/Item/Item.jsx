@@ -1,16 +1,16 @@
 import './index.css'
 import { Link } from 'react-router-dom'
 
-function Item ({ weapon }) {
+function Item ({ dataSkins }) {
   return (
-    <div className='skin-card' key={weapon.id}>
-      <span className='skin-card-category'>{weapon.category}</span>
-      <span className='skin-card-name'>{weapon.skin_name}</span>
-      <Link to={`/item/${weapon.id}`}>
-        <img src={weapon.skin_img} alt='Skin Image' />
+    <div className='skin-card' key={dataSkins.id}>
+      <span className='skin-card-category'>{dataSkins.category}</span>
+      <span className='skin-card-name'>{dataSkins.skin_name}</span>
+      <Link to={`/item/${dataSkins.id}`}>
+        <img src={dataSkins.skin_img} alt='Skin Image' />
       </Link>
-      <span>$ {weapon.price}</span>
-      <Link to={`/item/${weapon.id}`}>
+      <span>$ {dataSkins.price}</span>
+      <Link to={`/item/${dataSkins.id}`}>
         <span className='skin-card-button'>View Details</span>
       </Link>
     </div>

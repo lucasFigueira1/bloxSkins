@@ -3,7 +3,7 @@ import './index.css'
 import { Link } from 'react-router-dom'
 import { useCart } from '../../hooks/useCart'
 
-function ItemCount ({ weapon }) {
+function ItemCount ({ data }) {
   const [quantity, setQuantity] = useState(1)
   const { addToCart } = useCart()
 
@@ -16,8 +16,8 @@ function ItemCount ({ weapon }) {
   }
 
   const itemQuantityCart = () => {
-    weapon.quantity = quantity
-    addToCart(weapon)
+    data.quantity = quantity
+    addToCart(data)
   }
 
   return (

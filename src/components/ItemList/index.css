@@ -26,3 +26,9 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
+.is-loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
