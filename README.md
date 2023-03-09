@@ -16,4 +16,4 @@ You can also take a look at the details of the skin you want to buy
 
 The backend was built with Firebase, which is sharing the product list and getting buy orders
 
-![firebase](https://user-images.githubusercontent.com/109543824/224133796-18498b7f-f7fa-48ff-bb01-13cb6f1dbbb6.png)
+![firebase2](https://user-images.githubusercontent.com/109543824/224142619-76e43569-a5ef-4f31-9636-08ce1dcf0cff.png)
