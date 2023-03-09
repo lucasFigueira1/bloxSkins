@@ -5,20 +5,24 @@ import { collection, addDoc } from 'firebase/firestore'
 import { SuccessfulPurchase } from '../SuccessfulPurchase/SuccessfulPurchase'
 import { useCart } from '../../hooks/useCart'
 
-const initialState = {
-  name: '',
-  lastName: '',
-  email: ''
-}
-
 export function CheckoutForm () {
-  const [values, setValues] = useState(initialState)
   const [orderID, setOrderID] = useState('')
-  const { clearCart } = useCart()
+  const { cart, cartTotalPrice, clearCart } = useCart()
+
+  const order = {
+    buyerData: {
+      name: '',
+      lastName: '',
+      email: ''
+    },
+    items: cart,
+    totalPrice: cartTotalPrice()
+  }
+  const [values, setValues] = useState(order)
 
   const handleOnChange = (e) => {
     const { value, name } = e.target
-    setValues({ ...values, [name]: value })
+    setValues({ ...values, buyerData: { ...values.buyerData, [name]: value } })
   }
 
   const handleOnSubmit = async (e) => {
@@ -31,7 +35,7 @@ export function CheckoutForm () {
 
     clearCart()
     setOrderID(docRef.id)
-    setValues(initialState)
+    setValues(order)
   }
 
   return (
@@ -45,7 +49,7 @@ export function CheckoutForm () {
           placeholder='Name'
           required
           name='name'
-          value={values.name}
+          value={values.buyerData.name}
           onChange={handleOnChange}
         />
         <input
@@ -53,7 +57,7 @@ export function CheckoutForm () {
           placeholder='Lastname'
           required
           name='lastName'
-          value={values.lastName}
+          value={values.buyerData.lastName}
           onChange={handleOnChange}
         />
       </div>
@@ -63,7 +67,7 @@ export function CheckoutForm () {
         placeholder='Mail'
         required
         name='email'
-        value={values.email}
+        value={values.buyerData.email}
         onChange={handleOnChange}
       />
       <button className='end-buy-btn'>
