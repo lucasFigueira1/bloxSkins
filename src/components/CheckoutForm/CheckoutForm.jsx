@@ -7,7 +7,8 @@ import { useCart } from '../../hooks/useCart'
 
 export function CheckoutForm () {
   const [orderID, setOrderID] = useState('')
-  const { cart, cartTotalPrice, clearCart } = useCart()
+  const { cartTotalPrice, cart, clearCart } = useCart()
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   const order = {
     buyerData: {
@@ -15,9 +16,10 @@ export function CheckoutForm () {
       lastName: '',
       email: ''
     },
-    items: cart,
-    totalPrice: cartTotalPrice()
+    totalPrice: cartTotalPrice(),
+    items: cart
   }
+
   const [values, setValues] = useState(order)
 
   const handleOnChange = (e) => {
@@ -27,15 +29,21 @@ export function CheckoutForm () {
 
   const handleOnSubmit = async (e) => {
     e.preventDefault()
-
+    // If cart is empty disable submit
+    if (cart.lenght <= 0) {
+      setIsSubmitted(true)
+    }
+    // Prevent multiple submits
+    if (!isSubmitted) {
+      setIsSubmitted(true)
+    }
     // Add a new document with a generated id.
-    const docRef = await addDoc(collection(db, 'orders'), {
-      values
-    })
+    const { buyerData, totalPrice, items } = values
+    const docRef = await addDoc(collection(db, 'orders'), { buyerData, totalPrice, items })
 
-    clearCart()
     setOrderID(docRef.id)
     setValues(order)
+    clearCart()
   }
 
   return (
@@ -70,7 +78,7 @@ export function CheckoutForm () {
         value={values.buyerData.email}
         onChange={handleOnChange}
       />
-      <button className='end-buy-btn'>
+      <button className='end-buy-btn' disabled={isSubmitted}>
         Submit
       </button>
 

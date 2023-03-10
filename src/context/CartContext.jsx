@@ -19,12 +19,12 @@ export function CartContextProvider ({ children }) {
       setCart(newCart)
       return newCart
     }
+
     // Si la skin no está en el cart, la agrega
     const newCart = [
       ...cart,
       {
-        ...weapon,
-        cartItemsQuantity
+        ...weapon
       }
     ]
 
@@ -48,7 +48,7 @@ export function CartContextProvider ({ children }) {
 
   const cartTotalPrice = () => {
     const newCart = [...cart]
-    return newCart.reduce((accum, weapon) => accum + (weapon.price * weapon.quantity), 0)
+    return newCart.reduce((accum, weapon) => accum + (weapon.price * weapon.quantity), 0).toFixed(2)
   }
 
   return (
